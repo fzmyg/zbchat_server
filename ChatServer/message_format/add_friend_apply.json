@@ -1,0 +1,14 @@
+{
+    "client":{
+        "fromuid":"int",
+        "fromname":"string",
+        "fromnick":"string",
+        "fromicon":"string",
+        "touid":"int",
+        "apply_message":"string"
+    },
+    "server":{
+        "error":"int",
+        "touid":"int"
+    }
+}

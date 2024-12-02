@@ -1,0 +1,16 @@
+{
+    "server":{
+        "fromuid":"int",
+        "fromname":"string",
+        "touid":"int",
+        "message":"string",
+        "id":"string",
+        "fromicon":"string",
+        "fromnick":"string"
+    },"client":{
+        "error":"int",
+        "fromuid":"int",
+        "touid":"int",
+        "id":"string"
+    }
+}

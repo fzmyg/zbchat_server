@@ -1,0 +1,19 @@
+{
+    "client":{
+        "uid":"int",
+        "offset":"int",
+        "count":"int",
+        "stat":"int"
+    },
+    "server":{
+        "error":"int",
+        "offset":"int",
+        "count":"int",
+        "stat":"int",
+        "uidi":"int",
+        "namei":"string",
+        "nicki":"string",
+        "iconi":"string",
+        "messagei":"string"
+    }
+}

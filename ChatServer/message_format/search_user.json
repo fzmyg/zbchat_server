@@ -1,0 +1,16 @@
+{
+    "client":{
+        "fromuid":"int",
+        "search_name_or_uid":"string"
+    },
+    "server":{
+        "error":"int",
+        "uid":"int",
+        "name":"string",
+        "nick":"string",
+        "desc":"string",
+        "sex":"int",
+        "icon":"string", 
+        "location":"string"
+    }
+}

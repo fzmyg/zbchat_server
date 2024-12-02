@@ -1,0 +1,28 @@
+syntax = "proto3";
+package message;
+
+//状态服务器通信服务
+service StatusService{
+    rpc GetChatServer (GetChatServerReq) returns (GetChatServerRsp) ;
+    rpc Login (LoginReq) returns (LoginRsp){};
+}
+
+message GetChatServerReq{
+    int32 uid = 1; 
+}
+
+message GetChatServerRsp{
+    int32 error = 1; //错误状态码
+    string host = 2; //聊天服务器host
+    string port = 3; //聊天服务器port
+    string token = 4; //聊天服务器身份验证码
+}
+
+message LoginReq{
+    int32 uid = 1;
+    string token = 2;
+}
+
+message LoginRsp{
+    int32 error = 1;
+}

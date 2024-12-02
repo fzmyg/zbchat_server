@@ -1,0 +1,13 @@
+{
+    "client":{
+        "email":"string",
+        "password":"string"
+    },
+    "server":{
+        "error":"int",
+        "uid":"int",
+        "host":"string",
+        "port":"string",
+        "token":"string"
+    }
+}

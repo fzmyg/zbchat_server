@@ -1,0 +1,10 @@
+{
+    "client":{
+        "email":""
+    },
+    "server":{
+        "error":"",
+        "email":"",
+        "code":""
+    }
+}

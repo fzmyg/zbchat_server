@@ -1,0 +1,26 @@
+syntax="proto3";
+package message;
+
+message AddIconReq{
+    int32 uid = 1;
+    bytes contents = 2;
+};
+
+message AddIconRsp{
+    int32 error = 1;
+    string url = 2;
+};
+
+message GetIconReq{
+    string url = 1;
+};
+
+message GetIconRsp{
+    int32 error = 1;
+    bytes icon_pixmap = 2;
+}
+
+service ResourceService{
+    rpc AddIcon(AddIconReq) returns (AddIconRsp){};
+    rpc GetIcon(GetIconReq) returns (GetIconRsp){};
+};

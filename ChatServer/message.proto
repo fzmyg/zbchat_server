@@ -1,0 +1,71 @@
+syntax = "proto3";
+package message;
+
+service StatusService{
+    rpc Login (LoginReq) returns (LoginRsp){};
+}
+
+message LoginReq{
+    int32 uid = 1;
+    string token = 2;
+}
+
+message LoginRsp{
+    int32 error = 1;
+}
+
+service ChatService{
+    rpc AddFriend(AddFriendReq) returns (AddFriendRsp){};
+    rpc ReplyAddFriend(ReplyAddFriendReq) returns (ReplyAddFriendRsp){};
+}
+
+message AddFriendReq{
+    int32 fromuid = 1;
+    string fromname = 2;
+    int32 destuid = 3;
+    string desc_msg = 4;
+    string fromnick = 5;
+    string fromicon = 6;
+}
+
+message AddFriendRsp{
+    int32 error = 1;
+    int32 fromuid = 2;
+    int32 destuid = 3;
+}
+
+message ReplyAddFriendReq{
+    int32 reply_stat = 1;
+    int32 reply_uid = 2;
+    int32 to_uid = 3;
+}
+
+message ReplyAddFriendRsp{
+    int32 error = 1;
+    int32 replyuid = 2;
+    int32 touid = 3;
+}
+
+service ResourceService{
+    rpc AddIcon(AddIconReq) returns (AddIconRsp){};
+    rpc GetIcon(GetIconReq) returns (GetIconRsp){};
+};
+
+message AddIconReq{
+    int32 uid = 1;
+    bytes contents = 2;
+};
+
+message AddIconRsp{
+    int32 error = 1;
+    string url = 2;
+};
+
+message GetIconReq{
+    string url = 1;
+};
+
+message GetIconRsp{
+    int32 error = 1;
+    bytes icon_pixmap = 2;
+}

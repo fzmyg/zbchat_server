@@ -1,0 +1,17 @@
+{
+    "client":{
+        "uid":"int",
+        "token":"string"
+    },
+    "chat_server":{
+        "uid":"int",
+        "name":"string",
+        "nick":"string",
+        "sex":"int",
+        "desc":"string",
+        "icon":"string",
+        "location":"string",
+        "age":"int",
+        "error":"int"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "client":{
+        "user":"",
+        "password":"",
+        "email":"",
+        "code":""
+    },
+    "server":{
+        "error":1,
+        "uid":1
+    }
+}
